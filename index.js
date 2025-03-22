@@ -32,7 +32,7 @@ const start = async (seed, position, maxLength, maxWords, tlds) => {
         tlds = await jaci.string("Enter tlds (separated by spaces) : ")
     }
 
-    await generateNames(seed, position, maxLength, maxWords, tlds?.split(" "))
+    await generateNames(seed?.split(" ")?.sort((a, b) => a.length - b.length), position, maxLength, maxWords, tlds?.split(" "))
 
     const retry = await jaci.select("Do you want to generate more names? : ", {
         options: {
