@@ -1,4 +1,4 @@
-//@ts-check
+#!/usr/bin/env node
 
 const jaci = require("jaci");
 const { generateNames } = require("./lib/generator");
