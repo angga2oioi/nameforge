@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A Node.js CLI tool that generates pronounceable domain name suggestions based on a seed word and checks their availability.",
   "main": "index.js",
+  "bin": {
+    "nameforge": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
